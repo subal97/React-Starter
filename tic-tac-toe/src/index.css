@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite
+}
+
+
+.game-board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width:30vw;
+  height:auto;
+  margin: auto auto;
+}
+
+.status{
+  margin-bottom: 1rem;
+}
+
+.row:after{
+  clear:both;
+  content: "";
+  display: table;
+}
+
+.square{
+  float:left;
+  
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #000;
+  margin-top: -1px;
+  margin-right: -1px;
+
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+.game-info{
+  margin-top: 1rem;
+}

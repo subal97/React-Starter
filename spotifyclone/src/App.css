@@ -1,0 +1,128 @@
+.App{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: antiquewhite;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #000;
+  font-size: large;
+}
+
+.navbar nav{
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.branding{
+  display: flex;
+  align-items: center;
+}
+
+.branding span{
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.logo {
+  height: 2.5rem;
+  margin: 0.5rem;
+  animation: logo-spin infinite linear 5s;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-listing{
+  background: #502828;
+  height: 70vh;
+  max-height: 70vh;
+  
+  color:white;
+  width:80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.song-item{
+  width:50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.song-item > img{
+  height: 3rem;
+  margin: 0 0.5rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.music-item-control{
+  margin-right: 0.5rem;
+}
+
+.master-player{
+  background: #000;
+  width: 100%;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 0.5rem;
+}
+
+.seek-bar{
+  width:80%;
+}
+
+.seek-bar:focus{
+  outline: none;
+}
+
+.song-info{
+  color: white;
+  font-size: large;
+  width: 80%;
+
+  display: flex;
+}
+
+.song-name{
+  font-weight: bolder;
+}
+
+.song-info > .a {
+  position: absolute;
+  left: 50%;
+}
+
+.volume-control{
+  margin-left: auto;
+}
+
+.icons{
+  margin-bottom: 0.5rem;
+  color: rgb(238, 200, 200);
+  
+  display: flex;
+  gap: 0.5rem;
+}
